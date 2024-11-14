@@ -22,7 +22,41 @@ echo "Idade : $idade";
 echo "<hr>";
 //Array:
 $filhos = [ "João", "Maria", "Pedro", "Ana",];
-echo $filhos[1]
+echo $filhos[1];
+
+//==============================================
+echo "<hr>";
+//Objeto:
+class Pessoa {
+    public $nome;
+    public $idade;
+
+    public function __construct($nome, $idade){
+        $this->nome = $nome;
+        $this->idade = $idade;   
+    }
+    public function apresentar() {
+        return "Olá, meu nome é $this->nome e tenho $this->idade anos.";
+    }
+}
+$pessoa = new Pessoa("Juan", 17);
+echo $pessoa -> apresentar();
+
+
+echo "<hr>";
+
+$nome = 'José da Silva';
+echo "<strong>Nome: </
+strong>".$nome;
+
+
+
+$nome = 'José da Silva';
+echo "<strong>Nome : </
+strong>$nome";
+
+
+
 
 
 ?>

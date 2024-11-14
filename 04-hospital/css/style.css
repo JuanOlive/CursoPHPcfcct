@@ -1,8 +1,6 @@
 body {
-    background-color: darkorange
+  background-color: orange;
 }
-
-
 
 h1 {
   color: blue;
@@ -10,16 +8,15 @@ h1 {
   text-align: center;
 }
 H1:hover {
-    color: red;
+  color: red;
 }
 h2 {
-    text-align: center;
+  text-align: center;
 }
 #btn {
-    background-color: rgb(1, 136, 255);
-    width: 200px;
-    height: 100px;
-    display: block;
-    margin: 0 auto;
-
+  background-color: rgb(1, 136, 255);
+  width: 200px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
 }
