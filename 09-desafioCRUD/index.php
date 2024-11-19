@@ -10,6 +10,7 @@ $result = $conn->query("SELECT * FROM clientes");
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lista de Clients - Padaria Toque de Arte:) </title>
+  <link rel="stylesheet" href="css/st">
 </head>
 <body>
   <h1>Lista de Clientes - Toque de Arte :) </h1>
@@ -25,10 +26,10 @@ $result = $conn->query("SELECT * FROM clientes");
     <?php while ($row = $result->fetch_assoc()):?>
 
     <tr>
-      <td> <?= htmlspecialchars($['nome']);?>  </td>
-      <td> <?= htmlspecialchars($['email']);?>  </td>
-      <td> <?= htmlspecialchars($['sexo']);?>  </td>
-      <td> <?= htmlspecialchars($['bairro']);?>  </td>
+      <td> <?= htmlspecialchars($row['nome']);?>  </td>
+      <td> <?= htmlspecialchars($row['email']);?>  </td>
+      <td> <?= htmlspecialchars($row['sexo']);?>  </td>
+      <td> <?= htmlspecialchars($row['bairro']);?>  </td>
       <td>
         <a href="edit.php?id=<?= $row['id'];?>">Editar</a>
         <a href="delete.php?id=<?= $row['id'];?>" onclick="return confirm('Tem certeza que deseja apagar este cliente?')">Deletar</a>

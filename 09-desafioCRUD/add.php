@@ -1,13 +1,13 @@
 <?php 
-    include 'config.php'
+    include 'config.php';
     
-    if ( $_SERVER['REQUEST_METHOD'] = 'POST') {
-        $NOME = $_POST['nome'];
-        $NOME = $_POST['email'];
-        $NOME = $_POST['sexo'];
-        $NOME = $_POST['bairro'];
+    if ( $_SERVER['REQUEST_METHOD'] == 'POST') {
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $sexo = $_POST['sexo'];
+        $bairro = $_POST['bairro'];
 
-        $conn->query("INSERT INTO clientes(nome, email, sexo, bairro) VALUES ('$nome', '$email', '$sexo', $bairro')" );
+        $conn->query("INSERT INTO clientes(nome, email, sexo, bairro) VALUES ('$nome', '$email', '$sexo', '$bairro')");
         header("Location: index.php");
         exit();
     }
@@ -32,7 +32,7 @@
 </head>
 <body>
     <h1>Adicionar Novo Cliente</h1>
-    <form action="post" onsubmit="return validarFormulario()">
+    <form action="" method="post" onsubmit="return validarFormulario()">
 
     <label>Nome: <input type="text" name="nome" required>     </label><br>
     <label>Email: <input type="email" name="email" required>     </label><br>
@@ -44,7 +44,7 @@
 
         <label>Bairro: <input type="text" name="bairro" required>     </label><br>
 
-        <button type="submit"></button>
+        <button type="submit">salvar</button>
     </form>
 </body>
 </html>
