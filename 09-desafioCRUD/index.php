@@ -10,10 +10,10 @@ $result = $conn->query("SELECT * FROM clientes");
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lista de Clients - Padaria Toque de Arte:) </title>
-  <link rel="stylesheet" href="css/st">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Lista de Clientes - Toque de Arte :) </h1>
+  <img src="./css/image/logoTA.png" alt="">
   <a href="add.php">Criar Cliente</a>
   <table>
     <tr>

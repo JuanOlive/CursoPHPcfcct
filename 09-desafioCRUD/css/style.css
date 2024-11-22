@@ -1,0 +1,86 @@
+/* Estilo geral */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+img {
+  display: block; /* Remove o espaço abaixo da imagem */
+  margin-left: auto; /* Define a margem esquerda como automática */
+  margin-right: auto; /* Define a margem direita como automática */
+  width: 50%; /* Ajusta a largura da imagem para 50% do tamanho original */
+  height: auto;
+}
+
+/* Link de criação de cliente */
+a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+a:hover {
+  background-color: #45a049;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  margin-top: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Links de ações */
+td a {
+  margin: 0 5px;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+}
+
+td a:first-child {
+  background-color: #007bff;
+}
+
+td a:first-child:hover {
+  background-color: #0056b3;
+}
+
+td a:last-child {
+  background-color: #dc3545;
+}
+
+td a:last-child:hover {
+  background-color: #c82333;
+}

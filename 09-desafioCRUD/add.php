@@ -27,8 +27,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar Cliente</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/add-style.css">
     <script src="js/script.js"></script>
+    <style>
+
+        
+    </style>
 </head>
 <body>
     <h1>Adicionar Novo Cliente</h1>
